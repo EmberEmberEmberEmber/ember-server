@@ -1,0 +1,10 @@
+resources:
+  - backend.yaml
+
+configMapGenerator:
+  - name: ember-server-config #fix me
+    files:
+      - config.json=config/backend-config.json
+
+generatorOptions:
+  disableNameSuffixHash: true
